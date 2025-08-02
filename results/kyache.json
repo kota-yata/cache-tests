@@ -181,7 +181,7 @@
   "cdn-date-update-exceed": true,
   "cdn-expires-update-exceed": [
     "Assertion",
-    "Response 2 header Expires is \"null\", not \"Sat, 02 Aug 2025 16:24:34 GMT\""
+    "Response 2 header Expires is \"null\", not \"Sat, 02 Aug 2025 17:08:52 GMT\""
   ],
   "cdn-fresh-cc-nostore": [
     "Assertion",
@@ -419,26 +419,11 @@
   "freshness-max-age-max-plus-1": true,
   "freshness-max-age-negative": true,
   "freshness-max-age-quoted": true,
-  "freshness-max-age-s-maxage-shared-longer": [
-    "Assertion",
-    "Response 2 comes from cache"
-  ],
-  "freshness-max-age-s-maxage-shared-longer-multiple": [
-    "Assertion",
-    "Response 2 comes from cache"
-  ],
-  "freshness-max-age-s-maxage-shared-longer-reversed": [
-    "Assertion",
-    "Response 2 comes from cache"
-  ],
-  "freshness-max-age-s-maxage-shared-shorter": [
-    "Assertion",
-    "Response 2 does not come from cache"
-  ],
-  "freshness-max-age-s-maxage-shared-shorter-expires": [
-    "Assertion",
-    "Response 2 does not come from cache"
-  ],
+  "freshness-max-age-s-maxage-shared-longer": true,
+  "freshness-max-age-s-maxage-shared-longer-multiple": true,
+  "freshness-max-age-s-maxage-shared-longer-reversed": true,
+  "freshness-max-age-s-maxage-shared-shorter": true,
+  "freshness-max-age-s-maxage-shared-shorter-expires": true,
   "freshness-max-age-single-quoted": true,
   "freshness-max-age-space-after-equals": [
     "Assertion",
@@ -460,10 +445,7 @@
   "freshness-max-age-two-stale-fresh-sameline": true,
   "freshness-max-age-two-stale-fresh-sepline": true,
   "freshness-none": true,
-  "freshness-s-maxage-shared": [
-    "Assertion",
-    "Response 2 does not come from cache"
-  ],
+  "freshness-s-maxage-shared": true,
   "head-200-freshness-update": [
     "Assertion",
     "Response 3 does not come from cache"
@@ -706,10 +688,7 @@
   ],
   "other-authorization-must-revalidate": true,
   "other-authorization-public": true,
-  "other-authorization-smaxage": [
-    "Assertion",
-    "Response 2 does not come from cache"
-  ],
+  "other-authorization-smaxage": true,
   "other-cookie": true,
   "other-date-update": true,
   "other-date-update-expires": true,
