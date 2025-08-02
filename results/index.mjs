@@ -1,6 +1,13 @@
 
 export default [
   {
+    name: "Kyache",
+    file: "kyache.json",
+    type: 'rev-proxy',
+    link: "https://github.com/kota-yata/kyache",
+    version: "1.0.0"
+  },
+  {
     file: 'chrome.json',
     name: 'Chrome',
     type: 'browser',
