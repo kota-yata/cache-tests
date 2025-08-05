@@ -181,7 +181,7 @@
   "cdn-date-update-exceed": true,
   "cdn-expires-update-exceed": [
     "Assertion",
-    "Response 2 header Expires is \"null\", not \"Sun, 03 Aug 2025 17:46:33 GMT\""
+    "Response 2 header Expires is \"null\", not \"Tue, 05 Aug 2025 11:49:18 GMT\""
   ],
   "cdn-fresh-cc-nostore": [
     "Assertion",
@@ -419,11 +419,26 @@
   "freshness-max-age-max-plus-1": true,
   "freshness-max-age-negative": true,
   "freshness-max-age-quoted": true,
-  "freshness-max-age-s-maxage-shared-longer": true,
-  "freshness-max-age-s-maxage-shared-longer-multiple": true,
-  "freshness-max-age-s-maxage-shared-longer-reversed": true,
-  "freshness-max-age-s-maxage-shared-shorter": true,
-  "freshness-max-age-s-maxage-shared-shorter-expires": true,
+  "freshness-max-age-s-maxage-shared-longer": [
+    "Assertion",
+    "Response 2 comes from cache"
+  ],
+  "freshness-max-age-s-maxage-shared-longer-multiple": [
+    "Assertion",
+    "Response 2 comes from cache"
+  ],
+  "freshness-max-age-s-maxage-shared-longer-reversed": [
+    "Assertion",
+    "Response 2 comes from cache"
+  ],
+  "freshness-max-age-s-maxage-shared-shorter": [
+    "Assertion",
+    "Response 2 does not come from cache"
+  ],
+  "freshness-max-age-s-maxage-shared-shorter-expires": [
+    "Assertion",
+    "Response 2 does not come from cache"
+  ],
   "freshness-max-age-single-quoted": true,
   "freshness-max-age-space-after-equals": [
     "Assertion",
@@ -670,18 +685,9 @@
     "Assertion",
     "Response 1 age header not present."
   ],
-  "other-age-gen": [
-    "Assertion",
-    "Response 2 Age header not present."
-  ],
-  "other-age-update-expires": [
-    "Assertion",
-    "Response 2 header Age is 30, should be bigger than 32"
-  ],
-  "other-age-update-max-age": [
-    "Assertion",
-    "Response 2 header Age is 30, should be bigger than 32"
-  ],
+  "other-age-gen": true,
+  "other-age-update-expires": true,
+  "other-age-update-max-age": true,
   "other-authorization": [
     "Assertion",
     "Response 2 comes from cache"
