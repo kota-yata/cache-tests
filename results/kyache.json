@@ -102,10 +102,7 @@
   ],
   "age-parse-prefix": true,
   "age-parse-prefix-twoline": true,
-  "age-parse-suffix": [
-    "Assertion",
-    "Response 2 comes from cache"
-  ],
+  "age-parse-suffix": true,
   "age-parse-suffix-twoline": true,
   "cc-resp-must-revalidate-fresh": true,
   "cc-resp-must-revalidate-stale": [
@@ -181,7 +178,7 @@
   "cdn-date-update-exceed": true,
   "cdn-expires-update-exceed": [
     "Assertion",
-    "Response 2 header Expires is \"null\", not \"Tue, 05 Aug 2025 11:49:18 GMT\""
+    "Response 2 header Expires is \"null\", not \"Tue, 05 Aug 2025 12:24:22 GMT\""
   ],
   "cdn-fresh-cc-nostore": [
     "Assertion",
@@ -192,10 +189,7 @@
     "Response 2 does not come from cache"
   ],
   "cdn-max-age-0": true,
-  "cdn-max-age-0-expires": [
-    "Assertion",
-    "Response 2 comes from cache"
-  ],
+  "cdn-max-age-0-expires": true,
   "cdn-max-age-age": true,
   "cdn-max-age-case-insensitive": [
     "Assertion",
@@ -343,17 +337,26 @@
     "Response 2 status is 200, not 304"
   ],
   "conditional-lm-stale": true,
-  "freshness-expires-32bit": true,
+  "freshness-expires-32bit": [
+    "Assertion",
+    "Response 2 does not come from cache"
+  ],
   "freshness-expires-age-fast-date": true,
   "freshness-expires-age-slow-date": true,
-  "freshness-expires-ansi-c": true,
-  "freshness-expires-far-future": true,
-  "freshness-expires-future": true,
-  "freshness-expires-invalid": true,
-  "freshness-expires-invalid-1-digit-hour": [
+  "freshness-expires-ansi-c": [
     "Assertion",
-    "Response 2 comes from cache"
+    "Response 2 does not come from cache"
   ],
+  "freshness-expires-far-future": [
+    "Assertion",
+    "Response 2 does not come from cache"
+  ],
+  "freshness-expires-future": [
+    "Assertion",
+    "Response 2 does not come from cache"
+  ],
+  "freshness-expires-invalid": true,
+  "freshness-expires-invalid-1-digit-hour": true,
   "freshness-expires-invalid-2-digit-year": true,
   "freshness-expires-invalid-aest": true,
   "freshness-expires-invalid-date": [
@@ -361,27 +364,30 @@
     "Response 2 does not come from cache"
   ],
   "freshness-expires-invalid-date-dashes": true,
-  "freshness-expires-invalid-multiple-lines": [
-    "Assertion",
-    "Response 2 comes from cache"
-  ],
-  "freshness-expires-invalid-multiple-spaces": [
-    "Assertion",
-    "Response 2 comes from cache"
-  ],
+  "freshness-expires-invalid-multiple-lines": true,
+  "freshness-expires-invalid-multiple-spaces": true,
   "freshness-expires-invalid-no-comma": true,
   "freshness-expires-invalid-time-periods": true,
   "freshness-expires-invalid-utc": true,
   "freshness-expires-old-date": true,
   "freshness-expires-past": true,
   "freshness-expires-present": true,
-  "freshness-expires-rfc850": true,
-  "freshness-expires-wrong-case-month": true,
+  "freshness-expires-rfc850": [
+    "Assertion",
+    "Response 2 does not come from cache"
+  ],
+  "freshness-expires-wrong-case-month": [
+    "Assertion",
+    "Response 2 does not come from cache"
+  ],
   "freshness-expires-wrong-case-tz": [
     "Assertion",
     "Response 2 does not come from cache"
   ],
-  "freshness-expires-wrong-case-weekday": true,
+  "freshness-expires-wrong-case-weekday": [
+    "Assertion",
+    "Response 2 does not come from cache"
+  ],
   "freshness-max-age": true,
   "freshness-max-age-0": true,
   "freshness-max-age-0-expires": true,
@@ -686,7 +692,10 @@
     "Response 1 age header not present."
   ],
   "other-age-gen": true,
-  "other-age-update-expires": true,
+  "other-age-update-expires": [
+    "Assertion",
+    "Response 2 does not come from cache"
+  ],
   "other-age-update-max-age": true,
   "other-authorization": [
     "Assertion",
@@ -697,8 +706,14 @@
   "other-authorization-smaxage": true,
   "other-cookie": true,
   "other-date-update": true,
-  "other-date-update-expires": true,
-  "other-date-update-expires-update": true,
+  "other-date-update-expires": [
+    "Assertion",
+    "Response 2 does not come from cache"
+  ],
+  "other-date-update-expires-update": [
+    "Assertion",
+    "Response 2 does not come from cache"
+  ],
   "other-fresh-content-disposition-attachment": true,
   "other-heuristic-content-disposition-attachment": [
     "Assertion",
@@ -830,24 +845,12 @@
   "status-599-must-understand": true,
   "status-599-stale": true,
   "vary-2-match": true,
-  "vary-2-match-omit": [
-    "Assertion",
-    "Response 2 comes from cache"
-  ],
-  "vary-2-no-match": [
-    "Assertion",
-    "Response 2 comes from cache"
-  ],
+  "vary-2-match-omit": true,
+  "vary-2-no-match": true,
   "vary-3-match": true,
-  "vary-3-no-match": [
-    "Assertion",
-    "Response 2 comes from cache"
-  ],
+  "vary-3-no-match": true,
   "vary-3-omit": true,
-  "vary-3-order": [
-    "Assertion",
-    "Response 2 comes from cache"
-  ],
+  "vary-3-order": true,
   "vary-cache-key": true,
   "vary-invalidate": [
     "Assertion",
@@ -860,45 +863,21 @@
     "Assertion",
     "Response 2 does not come from cache"
   ],
-  "vary-normalise-lang-order": [
-    "Assertion",
-    "Response 2 does not come from cache"
-  ],
+  "vary-normalise-lang-order": true,
   "vary-normalise-lang-select": [
     "Assertion",
     "Response 2 does not come from cache"
   ],
-  "vary-normalise-lang-space": [
-    "Assertion",
-    "Response 2 does not come from cache"
-  ],
-  "vary-normalise-space": [
-    "Assertion",
-    "Response 2 does not come from cache"
-  ],
+  "vary-normalise-lang-space": true,
+  "vary-normalise-space": true,
   "vary-omit": true,
   "vary-omit-stored": true,
   "vary-star": true,
-  "vary-syntax-empty-star": [
-    "Assertion",
-    "Response 2 comes from cache"
-  ],
-  "vary-syntax-empty-star-lines": [
-    "Assertion",
-    "Response 2 comes from cache"
-  ],
-  "vary-syntax-foo-star": [
-    "Assertion",
-    "Response 2 comes from cache"
-  ],
+  "vary-syntax-empty-star": true,
+  "vary-syntax-empty-star-lines": true,
+  "vary-syntax-foo-star": true,
   "vary-syntax-star": true,
-  "vary-syntax-star-foo": [
-    "Assertion",
-    "Response 2 comes from cache"
-  ],
-  "vary-syntax-star-star": [
-    "Assertion",
-    "Response 2 comes from cache"
-  ],
+  "vary-syntax-star-foo": true,
+  "vary-syntax-star-star": true,
   "vary-syntax-star-star-lines": true
 }
