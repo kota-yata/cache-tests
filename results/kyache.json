@@ -178,7 +178,7 @@
   "cdn-date-update-exceed": true,
   "cdn-expires-update-exceed": [
     "Assertion",
-    "Response 2 header Expires is \"null\", not \"Tue, 05 Aug 2025 12:24:22 GMT\""
+    "Response 2 header Expires is \"null\", not \"Sun, 10 Aug 2025 12:22:21 GMT\""
   ],
   "cdn-fresh-cc-nostore": [
     "Assertion",
@@ -425,26 +425,11 @@
   "freshness-max-age-max-plus-1": true,
   "freshness-max-age-negative": true,
   "freshness-max-age-quoted": true,
-  "freshness-max-age-s-maxage-shared-longer": [
-    "Assertion",
-    "Response 2 comes from cache"
-  ],
-  "freshness-max-age-s-maxage-shared-longer-multiple": [
-    "Assertion",
-    "Response 2 comes from cache"
-  ],
-  "freshness-max-age-s-maxage-shared-longer-reversed": [
-    "Assertion",
-    "Response 2 comes from cache"
-  ],
-  "freshness-max-age-s-maxage-shared-shorter": [
-    "Assertion",
-    "Response 2 does not come from cache"
-  ],
-  "freshness-max-age-s-maxage-shared-shorter-expires": [
-    "Assertion",
-    "Response 2 does not come from cache"
-  ],
+  "freshness-max-age-s-maxage-shared-longer": true,
+  "freshness-max-age-s-maxage-shared-longer-multiple": true,
+  "freshness-max-age-s-maxage-shared-longer-reversed": true,
+  "freshness-max-age-s-maxage-shared-shorter": true,
+  "freshness-max-age-s-maxage-shared-shorter-expires": true,
   "freshness-max-age-single-quoted": true,
   "freshness-max-age-space-after-equals": [
     "Assertion",
@@ -616,20 +601,20 @@
     "Response 2 does not come from cache"
   ],
   "interim-102": [
-    "ReferenceError",
-    "File is not defined"
+    "Assertion",
+    "Interim response 1 not received"
   ],
   "interim-103": [
-    "ReferenceError",
-    "File is not defined"
+    "Assertion",
+    "Interim response 1 not received"
   ],
   "interim-no-header-reuse": [
-    "ReferenceError",
-    "File is not defined"
+    "Assertion",
+    "Interim response 1 not received"
   ],
   "interim-not-cached": [
-    "ReferenceError",
-    "File is not defined"
+    "Assertion",
+    "Interim response 1 not received"
   ],
   "invalidate-DELETE": [
     "Assertion",
